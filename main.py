@@ -78,7 +78,7 @@ def main():
     colors = greedy_coloring(G)
     
     # Выводим результаты с названиями цветов
-    print(f"Раскраска вершин (индекс: цвет), выполнено в 19:52 CEST, 04.06.2025:")
+    print(f"Раскраска вершин (индекс: цвет):")
     for vertex, color_num in colors.items():
         color_name = COLOR_NAMES.get(color_num, f"цвет {color_num}")  # Если цвет вне словаря
         print(f"Вершина {vertex}: {color_name}")
