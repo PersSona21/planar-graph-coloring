@@ -65,6 +65,7 @@ def visualize_graph(matrix, colors):
     plt.figure(figsize=(8, 6))
     nx.draw(G, pos, node_color=vertex_colors, with_labels=True, node_size=500, font_size=12, font_weight='bold')
     plt.title("Раскраска планарного графа (жадный алгоритм, 4 цвета)")
+    plt.savefig("graph_coloring.png")
     plt.show()
 
 def main():
